@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "gendiff": "./gendiff.js"
+    "gendiff": "./src/bin/gendiff.js"
   },
   "author": "",
   "license": "ISC",
