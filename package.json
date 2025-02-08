@@ -9,7 +9,7 @@
     "test:watch": "jest --watch"
   },
   "bin": {
-    "gendiff": "./src/bin/gendiff.js"
+    "gendiff": "./bin/gendiff.js"
   },
   "author": "",
   "license": "ISC",
