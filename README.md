@@ -6,9 +6,11 @@
 
 [![Actions Status](https://github.com/Anakharsis9/frontend-project-46/actions/workflows/ci.yml/badge.svg)](https://github.com/Anakharsis9/frontend-project-46/actions)
 
-### CodeClimate maintainability status:
+### CodeClimate maintainability and test coverage status:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9e358873017d23521dd3/maintainability)](https://codeclimate.com/github/Anakharsis9/frontend-project-46/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9e358873017d23521dd3/test_coverage)](https://codeclimate.com/github/Anakharsis9/frontend-project-46/test_coverage)
 
 # gendiff
 
