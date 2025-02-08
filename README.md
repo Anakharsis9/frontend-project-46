@@ -2,6 +2,10 @@
 
 [![Actions Status](https://github.com/Anakharsis9/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Anakharsis9/frontend-project-46/actions)
 
+### Github Actions ci.yml tests and linter status:
+
+[![Actions Status](https://github.com/Anakharsis9/frontend-project-46/actions/workflows/ci.yml/badge.svg)](https://github.com/Anakharsis9/frontend-project-46/actions)
+
 ### CodeClimate maintainability status:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/9e358873017d23521dd3/maintainability)](https://codeclimate.com/github/Anakharsis9/frontend-project-46/maintainability)
