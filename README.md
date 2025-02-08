@@ -2,6 +2,10 @@
 
 [![Actions Status](https://github.com/Anakharsis9/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Anakharsis9/frontend-project-46/actions)
 
+### CodeClimate maintainability status:
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/9e358873017d23521dd3/maintainability)](https://codeclimate.com/github/Anakharsis9/frontend-project-46/maintainability)
+
 # gendiff
 
 Утилита для сравнения двух конфигурационных файлов и выводит их разницу.
