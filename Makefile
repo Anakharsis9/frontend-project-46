@@ -2,7 +2,7 @@ public:
 		npm link
 
 test: public
-		gendiff ./src/test/file1.json ./src/test/file2.json
+		gendiff ./src/__tests__/__fixtures__/file1.json ./src/__tests__/__fixtures__/file2.json
 
 lint:
 		npx eslint
