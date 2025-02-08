@@ -4,5 +4,8 @@ public:
 test: public
 		gendiff ./src/test/file1.json ./src/test/file2.json
 
-make lint:
+lint:
 		npx eslint
+
+lintfix:
+		npx eslint . --fix
