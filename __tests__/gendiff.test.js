@@ -5,10 +5,7 @@ import genDiff from '../index.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-test('gendiff compares flat JSON files', () => {
-  const file1Path = path.join(__dirname, '__fixtures__', 'file1.json');
-  const file2Path = path.join(__dirname, '__fixtures__', 'file2.json');
-
+describe('gendiff', () => {
   const expectedDiff = `{
   - follow: false
     host: hexlet.io
@@ -18,5 +15,17 @@ test('gendiff compares flat JSON files', () => {
   + verbose: true
 }`;
 
-  expect(genDiff(file1Path, file2Path)).toBe(expectedDiff);
+  test('compares flat JSON files', () => {
+    const file1Path = path.join(__dirname, '__fixtures__', 'file1.json');
+    const file2Path = path.join(__dirname, '__fixtures__', 'file2.json');
+
+    expect(genDiff(file1Path, file2Path)).toEqual(expectedDiff);
+  });
+
+  test('compares flat YML files', () => {
+    const file1Path = path.join(__dirname, '__fixtures__', 'file1.yml');
+    const file2Path = path.join(__dirname, '__fixtures__', 'file2.yml');
+
+    expect(genDiff(file1Path, file2Path)).toEqual(expectedDiff);
+  });
 });

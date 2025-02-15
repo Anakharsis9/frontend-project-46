@@ -25,8 +25,10 @@ npm link
 
 ## Пример работы
 
-```sh
-gendiff ./src/test/file1.json ./src/test/file2.json
-```
+### Сравнение flat JSON
 
 [![asciicast](https://asciinema.org/a/3GGXaoJOeHSaZYVBFVuDsqYUR.svg)](https://asciinema.org/a/3GGXaoJOeHSaZYVBFVuDsqYUR)
+
+### Сравнение flat YAML
+
+[![asciicast](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW.svg)](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW)
