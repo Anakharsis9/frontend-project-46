@@ -32,3 +32,7 @@ npm link
 ### Сравнение flat YAML
 
 [![asciicast](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW.svg)](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW)
+
+### Сравнение nested JSON in stylish format
+
+[![asciicast](https://asciinema.org/a/qNn7R5BFXakIHUe6Z8FatYbEg.svg)](https://asciinema.org/a/qNn7R5BFXakIHUe6Z8FatYbEg)
