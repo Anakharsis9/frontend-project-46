@@ -33,6 +33,10 @@ npm link
 
 [![asciicast](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW.svg)](https://asciinema.org/a/j8ozf1sOGsarWUXNl3zAu2iwW)
 
-### Сравнение nested JSON in stylish format
+### Сравнение nested JSON в stylish format
 
 [![asciicast](https://asciinema.org/a/qNn7R5BFXakIHUe6Z8FatYbEg.svg)](https://asciinema.org/a/qNn7R5BFXakIHUe6Z8FatYbEg)
+
+### Сравнение nested JSON в plain format
+
+[![asciicast](https://asciinema.org/a/BZCvGhsQeHqsnGt6bosCaZcVy.svg)](https://asciinema.org/a/BZCvGhsQeHqsnGt6bosCaZcVy)
