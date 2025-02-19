@@ -37,7 +37,9 @@ const buildDiff = (data1, data2) => {
     }
 
     if (!_.isEqual(value1, value2)) {
-      return { key, type: 'changed', oldValue: value1, newValue: value2 };
+      return {
+        key, type: 'changed', oldValue: value1, newValue: value2,
+      };
     }
 
     return { key, type: 'unchanged', value: value1 };

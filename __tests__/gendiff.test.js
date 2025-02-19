@@ -93,3 +93,22 @@ Property 'group3' was added with value: [complex value]`;
     expect(genDiff(file1Path, file2Path, 'plain')).toEqual(expectedDiff);
   });
 });
+
+describe('gendiff --format json', () => {
+  // eslint-disable-next-line quotes
+  const expectedDiff = `[{"key":"common","type":"nested","children":[{"key":"follow","type":"added","value":false},{"key":"setting1","type":"unchanged","value":"Value 1"},{"key":"setting2","type":"removed","value":200},{"key":"setting3","type":"changed","oldValue":true,"newValue":null},{"key":"setting4","type":"added","value":"blah blah"},{"key":"setting5","type":"added","value":{"key5":"value5"}},{"key":"setting6","type":"nested","children":[{"key":"doge","type":"nested","children":[{"key":"wow","type":"changed","oldValue":"","newValue":"so much"}]},{"key":"key","type":"unchanged","value":"value"},{"key":"ops","type":"added","value":"vops"}]}]},{"key":"group1","type":"nested","children":[{"key":"baz","type":"changed","oldValue":"bas","newValue":"bars"},{"key":"foo","type":"unchanged","value":"bar"},{"key":"nest","type":"changed","oldValue":{"key":"value"},"newValue":"str"}]},{"key":"group2","type":"removed","value":{"abc":12345,"deep":{"id":45}}},{"key":"group3","type":"added","value":{"deep":{"id":{"number":45}},"fee":100500}}]`;
+
+  test('compares JSON files', () => {
+    const file1Path = path.join(__dirname, '__fixtures__', 'file1.json');
+    const file2Path = path.join(__dirname, '__fixtures__', 'file2.json');
+
+    expect(genDiff(file1Path, file2Path, 'json')).toEqual(expectedDiff);
+  });
+
+  test('compares YML files', () => {
+    const file1Path = path.join(__dirname, '__fixtures__', 'file1.yml');
+    const file2Path = path.join(__dirname, '__fixtures__', 'file2.yml');
+
+    expect(genDiff(file1Path, file2Path, 'json')).toEqual(expectedDiff);
+  });
+});

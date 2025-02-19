@@ -40,3 +40,7 @@ npm link
 ### Сравнение nested JSON в plain format
 
 [![asciicast](https://asciinema.org/a/BZCvGhsQeHqsnGt6bosCaZcVy.svg)](https://asciinema.org/a/BZCvGhsQeHqsnGt6bosCaZcVy)
+
+### Сравнение nested JSON в json format
+
+[![asciicast](https://asciinema.org/a/KHP4yqCimOAHKJCU2NBW8fMyq.svg)](https://asciinema.org/a/KHP4yqCimOAHKJCU2NBW8fMyq)
