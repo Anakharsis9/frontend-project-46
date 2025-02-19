@@ -3,8 +3,7 @@ import _ from 'lodash';
 const formatStylish = (diff, deepLevel = 1) => {
   const spaceCountByLevel = 4;
   const leftShift = 2;
-  const calcMargin = (level) =>
-    ' '.repeat(level * spaceCountByLevel - leftShift);
+  const calcMargin = (level) => ' '.repeat(level * spaceCountByLevel - leftShift);
 
   const stringify = (value, level) => {
     if (!_.isObject(value)) {
@@ -13,8 +12,7 @@ const formatStylish = (diff, deepLevel = 1) => {
 
     const entries = Object.entries(value)
       .map(
-        ([key, val]) =>
-          `${calcMargin(level + 1)}  ${key}: ${stringify(val, level + 1)}`,
+        ([key, val]) => `${calcMargin(level + 1)}  ${key}: ${stringify(val, level + 1)}`,
       )
       .join('\n');
 

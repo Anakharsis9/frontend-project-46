@@ -27,6 +27,8 @@ const formatPlain = (diff, parentPath = '') => {
           return formatPlain(record.children, fullPath);
         case 'unchanged':
           return null;
+        default:
+          throw new Error(`Unknown type: ${record.type}`);
       }
     })
     .filter(Boolean)
