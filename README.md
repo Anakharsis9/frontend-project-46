@@ -19,7 +19,7 @@
 ## Установка
 
 ```sh
-npm install
+npm install --legacy-peer-deps
 npm link
 ```
 
