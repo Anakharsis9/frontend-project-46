@@ -21,8 +21,8 @@ const formatPlain = (diff, parentPath = '') => {
           return `Property '${fullPath}' was removed`;
         case 'changed':
           return `Property '${fullPath}' was updated. From ${formatValue(
-            record.oldValue,
-          )} to ${formatValue(record.newValue)}`;
+            record.value1,
+          )} to ${formatValue(record.value2)}`;
         case 'nested':
           return formatPlain(record.children, fullPath);
         case 'unchanged':

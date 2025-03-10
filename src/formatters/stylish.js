@@ -40,9 +40,9 @@ const formatStylish = (diff, deepLevel = 1) => {
         )}\n${margin}  }`;
       case 'changed':
         return `${margin}- ${record.key}: ${stringify(
-          record.oldValue,
+          record.value1,
           deepLevel,
-        )}\n${margin}+ ${record.key}: ${stringify(record.newValue, deepLevel)}`;
+        )}\n${margin}+ ${record.key}: ${stringify(record.value2, deepLevel)}`;
       case 'unchanged':
         return `${margin}  ${record.key}: ${stringify(
           record.value,
