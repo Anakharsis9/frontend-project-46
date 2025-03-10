@@ -17,12 +17,12 @@ const parseFile = (filepath) => {
   return parse(fileContent, fileFormat);
 };
 
-const genDiff = (filepath1, filepath2, formatName = 'stylish') => {
+const genDiff = (filepath1, filepath2, outputFormat = 'stylish') => {
   const data1 = parseFile(filepath1);
   const data2 = parseFile(filepath2);
 
   const diff = buildDiff(data1, data2);
-  return format(diff, formatName);
+  return format(diff, outputFormat);
 };
 
 export default genDiff;
